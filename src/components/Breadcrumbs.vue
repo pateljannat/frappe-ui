@@ -45,6 +45,7 @@
           <span>
             {{ item.label }}
           </span>
+          <slot name="prefix" :item="item" />
         </component>
         <span
           v-if="i != crumbs.length - 1"
